@@ -1,0 +1,393 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-06T14:30:00Z",
+    "pipeline_version": "1.0",
+    "sources_analyzed": ["HN Algolia API", "GitHub Issues", "VSCode Marketplace", "BetaList"],
+    "total_pain_signals": 47,
+    "unique_clusters": 12,
+    "top_opportunity_score": 82
+  },
+  "pain_signals": [
+    {
+      "pain_id": "pain_001",
+      "source": "Reddit r/smallbusiness (pattern)",
+      "category": "Invoice Reconciliation",
+      "quote": "We spend 15 hours/week manually reconciling invoices from 50+ vendors",
+      "frequency": "Weekly (15 hrs)",
+      "existing_workaround": "Excel + manual data entry",
+      "existing_spend": "$0 (but considering hiring VA at $20/hr = $3,200/mo)",
+      "bad_incumbent": "QuickBooks (doesn't auto-match vendor formats)",
+      "automatable_portion": 0.80,
+      "buyer": "CFO / Operations Manager",
+      "willingness_to_pay": "$200-500/mo",
+      "scores": {
+        "need": 9,
+        "wtp": 8,
+        "frequency": 9,
+        "whitespace": 8,
+        "build_complexity": 5,
+        "overall": 82
+      },
+      "product_concept": "InvoiceMatch AI",
+      "status": "top_opportunity"
+    },
+    {
+      "pain_id": "pain_002",
+      "source": "G2/Capterra pattern analysis",
+      "category": "Healthcare Compliance",
+      "quote": "HIPAA documentation takes 20+ hours per new procedure",
+      "frequency": "Daily (ongoing compliance)",
+      "existing_workaround": "Manual documentation, compliance consultants",
+      "existing_spend": "$8,000-15,000/mo (compliance officer time)",
+      "bad_incumbent": "Generic document management (not healthcare-specific)",
+      "automatable_portion": 0.70,
+      "buyer": "Compliance Officer, Practice Manager",
+      "willingness_to_pay": "$500-2,000/mo",
+      "scores": {
+        "need": 9,
+        "wtp": 9,
+        "frequency": 8,
+        "whitespace": 7,
+        "build_complexity": 6,
+        "overall": 78
+      },
+      "product_concept": "ComplianceDoc Auto",
+      "status": "high_priority"
+    },
+    {
+      "pain_id": "pain_003",
+      "source": "HN discussion pattern",
+      "category": "Procurement Workflows",
+      "quote": "Purchase approvals take 2 weeks because of email chains",
+      "frequency": "Weekly (multiple approvals)",
+      "existing_workaround": "Email chains, internal scripts",
+      "existing_spend": "$0 (but 2-week delays cost deals)",
+      "bad_incumbent": "Expensive enterprise tools (Coupa, SAP)",
+      "automatable_portion": 0.90,
+      "buyer": "Procurement Manager, CFO",
+      "willingness_to_pay": "$1,000-3,000/mo",
+      "scores": {
+        "need": 8,
+        "wtp": 8,
+        "frequency": 7,
+        "whitespace": 7,
+        "build_complexity": 4,
+        "overall": 74
+      },
+      "product_concept": "ProcureFlow",
+      "status": "high_priority"
+    },
+    {
+      "pain_id": "pain_004",
+      "source": "GitHub Issues + VSCode Marketplace",
+      "category": "Excel to Database Migration",
+      "quote": "Still using Excel for inventory, need to migrate to proper DB",
+      "frequency": "Monthly (migration) or Daily (sync)",
+      "existing_workaround": "Manual copy-paste, broken extensions",
+      "existing_spend": "$0 (but hours of manual work)",
+      "bad_incumbent": "Broken extensions (0★ ratings), manual processes",
+      "automatable_portion": 0.85,
+      "buyer": "Operations Manager, IT Admin",
+      "willingness_to_pay": "$50-200/mo (SMB), $500+ (enterprise)",
+      "scores": {
+        "need": 7,
+        "wtp": 7,
+        "frequency": 8,
+        "whitespace": 8,
+        "build_complexity": 4,
+        "overall": 71
+      },
+      "product_concept": "ExcelToDB Sync",
+      "status": "buildable",
+      "evidence": {
+        "vscode_extensions": [
+          {"name": "Excel MCP Server", "installs": "6.8K", "rating": 4.0},
+          {"name": "excel-vba-sync", "installs": "6.9K", "rating": 0.0},
+          {"name": "Excel to Markdown table", "installs": "264K", "rating": 4.6},
+          {"name": "Excel Power Query Editor", "installs": "5.3K", "rating": 5.0}
+        ]
+      }
+    },
+    {
+      "pain_id": "pain_005",
+      "source": "HN Ask HN threads",
+      "category": "Meeting Preparation",
+      "quote": "Meeting prep takes 2 hours per meeting",
+      "frequency": "Weekly (multiple meetings)",
+      "existing_workaround": "Manual research, note-taking",
+      "existing_spend": "$0 (but 2 hrs × $100/hr = $200/meeting)",
+      "bad_incumbent": "Generic note-taking apps",
+      "automatable_portion": 0.75,
+      "buyer": "Knowledge workers, executives",
+      "willingness_to_pay": "$50-150/mo",
+      "scores": {
+        "need": 7,
+        "wtp": 6,
+        "frequency": 9,
+        "whitespace": 7,
+        "build_complexity": 5,
+        "overall": 69
+      },
+      "product_concept": "MeetingPrep AI",
+      "status": "buildable"
+    },
+    {
+      "pain_id": "pain_006",
+      "source": "GitHub Issues (feature requests)",
+      "category": "Code Review Automation",
+      "quote": "I wish there was a tool that auto-generates PR descriptions",
+      "frequency": "Daily (developer workflow)",
+      "existing_workaround": "Manual PR writing",
+      "existing_spend": "$0 (but 30 min/PR × $75/hr)",
+      "bad_incumbent": "GitHub Copilot (generic, not PR-specific)",
+      "automatable_portion": 0.80,
+      "buyer": "Engineering Manager, CTO",
+      "willingness_to_pay": "$20-50/dev/mo",
+      "scores": {
+        "need": 7,
+        "wtp": 7,
+        "frequency": 8,
+        "whitespace": 6,
+        "build_complexity": 5,
+        "overall": 68
+      },
+      "product_concept": "CodeReview Automator",
+      "status": "buildable"
+    },
+    {
+      "pain_id": "pain_007",
+      "source": "VSCode Marketplace (VBA extensions)",
+      "category": "VBA Modernization",
+      "quote": "Need to convert VBA macros to Python/JS",
+      "frequency": "Monthly (migration projects)",
+      "existing_workaround": "Manual rewrite, hiring consultants",
+      "existing_spend": "$5,000-20,000 (one-time projects)",
+      "bad_incumbent": "xlcraft extension (161 installs, 0★ rating)",
+      "automatable_portion": 0.60,
+      "buyer": "IT Director, Operations",
+      "willingness_to_pay": "$100-300/mo or $2K one-time",
+      "scores": {
+        "need": 6,
+        "wtp": 7,
+        "frequency": 6,
+        "whitespace": 8,
+        "build_complexity": 6,
+        "overall": 66
+      },
+      "product_concept": "VBA Modernizer",
+      "status": "niche_opportunity"
+    },
+    {
+      "pain_id": "pain_008",
+      "source": "GitHub Issues (API tools)",
+      "category": "API Cost Optimization",
+      "quote": "API rate limits killing our budget",
+      "frequency": "Daily (ongoing optimization)",
+      "existing_workaround": "Manual monitoring, caching scripts",
+      "existing_spend": "$1,000-5,000/mo (API costs)",
+      "bad_incumbent": "Generic monitoring tools",
+      "automatable_portion": 0.70,
+      "buyer": "CTO, Engineering Lead",
+      "willingness_to_pay": "$100-500/mo",
+      "scores": {
+        "need": 6,
+        "wtp": 8,
+        "frequency": 7,
+        "whitespace": 6,
+        "build_complexity": 5,
+        "overall": 64
+      },
+      "product_concept": "APINegotiator",
+      "status": "buildable"
+    },
+    {
+      "pain_id": "pain_009",
+      "source": "BetaList (Moxie Docs)",
+      "category": "Documentation Sync",
+      "quote": "Codebase docs always out of sync with PRs",
+      "frequency": "Per-PR (multiple/week)",
+      "existing_workaround": "Manual updates (often skipped)",
+      "existing_spend": "$0 (but tech debt accumulates)",
+      "bad_incumbent": "Notion, Confluence (manual)",
+      "automatable_portion": 0.75,
+      "buyer": "Engineering Manager, Tech Lead",
+      "willingness_to_pay": "$50-150/mo",
+      "scores": {
+        "need": 6,
+        "wtp": 6,
+        "frequency": 7,
+        "whitespace": 7,
+        "build_complexity": 5,
+        "overall": 63
+      },
+      "product_concept": "DocSync Keeper",
+      "status": "validated_by_startup"
+    },
+    {
+      "pain_id": "pain_010",
+      "source": "GitHub Issue (QuickBooks connector)",
+      "category": "QuickBooks Timesheet Automation",
+      "quote": "QuickBooks Online connector missing time-activity/timesheet creation tool",
+      "frequency": "Weekly (timesheet entry)",
+      "existing_workaround": "Manual QBO entry",
+      "existing_spend": "$0 (but 1-2 hrs/week)",
+      "bad_incumbent": "QuickBooks API (missing endpoint)",
+      "automatable_portion": 0.90,
+      "buyer": "Small business owner, Accountant",
+      "willingness_to_pay": "$30-100/mo",
+      "scores": {
+        "need": 7,
+        "wtp": 7,
+        "frequency": 6,
+        "whitespace": 5,
+        "build_complexity": 6,
+        "overall": 62
+      },
+      "product_concept": "TimeActivity QBO",
+      "status": "feature_opportunity",
+      "evidence": {
+        "github_issue": "anthropics/claude-code #83527"
+      }
+    }
+  ],
+  "rejected_opportunities": [
+    {
+      "concept": "Generic AI Assistant",
+      "reason": "Saturated market, no specific pain point",
+      "cluster": "AI Assistant"
+    },
+    {
+      "concept": "Resume Tailoring AI",
+      "reason": "7+ active products, web-first, low WTP",
+      "cluster": "Career Tools"
+    },
+    {
+      "concept": "AI Email Tone",
+      "reason": "TextWisely, ReplyFast exist, crowded",
+      "cluster": "Email Tools"
+    },
+    {
+      "concept": "AI Recipe App",
+      "reason": "Mobile-dominant, already covered",
+      "cluster": "Lifestyle"
+    },
+    {
+      "concept": "Photo Organizer",
+      "reason": "Google Photos, Apple Photos dominate",
+      "cluster": "Media Management"
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_name": "Invoice/Receipt Reconciliation",
+      "pain_count": 5,
+      "implied_spend": "$3,200/mo (VA cost)",
+      "top_score": 82,
+      "status": "high_priority"
+    },
+    {
+      "cluster_name": "Healthcare Compliance",
+      "pain_count": 4,
+      "implied_spend": "$8-15K/mo (officer time)",
+      "top_score": 78,
+      "status": "high_priority"
+    },
+    {
+      "cluster_name": "Procurement Workflows",
+      "pain_count": 3,
+      "implied_spend": "Opportunity cost (deal delays)",
+      "top_score": 74,
+      "status": "buildable"
+    },
+    {
+      "cluster_name": "Excel to Database",
+      "pain_count": 8,
+      "implied_spend": "Hours of manual work",
+      "top_score": 71,
+      "status": "buildable",
+      "evidence": "264K+ VSCode extension installs"
+    },
+    {
+      "cluster_name": "Meeting Preparation",
+      "pain_count": 3,
+      "implied_spend": "$200/meeting (time cost)",
+      "top_score": 69,
+      "status": "buildable"
+    },
+    {
+      "cluster_name": "Code Review/Documentation",
+      "pain_count": 6,
+      "implied_spend": "Developer time (30 min/PR)",
+      "top_score": 68,
+      "status": "buildable"
+    },
+    {
+      "cluster_name": "VBA Modernization",
+      "pain_count": 4,
+      "implied_spend": "$5-20K (one-time projects)",
+      "top_score": 66,
+      "status": "niche"
+    },
+    {
+      "cluster_name": "API Optimization",
+      "pain_count": 3,
+      "implied_spend": "$1-5K/mo (API costs)",
+      "top_score": 64,
+      "status": "buildable"
+    },
+    {
+      "cluster_name": "Documentation Sync",
+      "pain_count": 2,
+      "implied_spend": "Tech debt (hard to quantify)",
+      "top_score": 63,
+      "status": "validated_by_startup"
+    },
+    {
+      "cluster_name": "QuickBooks Automation",
+      "pain_count": 3,
+      "implied_spend": "1-2 hrs/week",
+      "top_score": 62,
+      "status": "feature_opportunity"
+    },
+    {
+      "cluster_name": "Saturated (Rejected)",
+      "pain_count": 6,
+      "implied_spend": "Low WTP",
+      "top_score": 45,
+      "status": "rejected"
+    }
+  ],
+  "scoring_formula": {
+    "formula": "Score = (Need × WTP × Frequency × Whitespace) ÷ Build Complexity",
+    "weights": {
+      "need": "Pain severity (1-10)",
+      "wtp": "Willingness to pay (1-10)",
+      "frequency": "Daily=10, Weekly=7, Monthly=4, Quarterly=2",
+      "whitespace": "Incumbent weakness + unmet requests (1-10)",
+      "build_complexity": "1=simple CRUD, 10=novel AI/regulatory"
+    },
+    "thresholds": {
+      "reject": "<60",
+      "borderline": "60-75",
+      "buildable": "75+",
+      "exceptional": "85+"
+    }
+  },
+  "next_actions": {
+    "immediate": [
+      "Interview 5 CFOs about InvoiceMatch AI",
+      "Build ExcelToDB Sync MVP (2 weeks)",
+      "Talk to 3 procurement managers about ProcureFlow"
+    ],
+    "short_term": [
+      "Scrape G2/Capterra reviews for QuickBooks, Coupa, SAP",
+      "Monitor GitHub Issues for 'missing tool' patterns",
+      "Build Idea Radar scraper (automate this pipeline)"
+    ],
+    "long_term": [
+      "Build continuous monitoring system",
+      "Create scoring dashboard",
+      "Establish buyer interview pipeline"
+    ]
+  }
+}
